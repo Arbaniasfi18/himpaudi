@@ -1,0 +1,23 @@
+@import './app.css';
+
+.card {
+    color: white;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.card:hover {
+    background-color: white;
+    color: var(--clr-secondary);
+    box-shadow: 1px 1px 10px grey;
+}
+
+.card-button {
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    color: var(--clr-secondary)
+}
+
+.card-button:hover {
+    background-color: var(--clr-dark);
+    color: white;
+}

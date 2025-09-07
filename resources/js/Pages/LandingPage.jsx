@@ -1,20 +1,50 @@
 import ayangmePic from '../../../public/assets/images/Ayames.png';
 import '../../css/landingpage.css';
+import Jumbotron from '../components/Jumbotron';
+import LandingListItem from '../components/LandingListItem';
+import Layout from '../components/Layout';
 
-function LandingPage({}) {
+function LandingPage({ cur_url }) {
+    const item = [
+        {
+            'id': 1,
+            'image': 'assets/images/1.jpg',
+            'title': 'Lorem Ipsum Dolor Sit Amet',
+            'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin portti',
+        },
+        {
+            'id': 2,
+            'image': 'assets/images/2.jpg',
+            'title': 'Lorem Ipsum Dolor Sit Amet',
+            'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin portti',
+        },
+        {
+            'id': 3,
+            'image': 'assets/images/3.jpg',
+            'title': 'Lorem Ipsum Dolor Sit Amet',
+            'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin portti',
+        },
+        {
+            'id': 4,
+            'image': 'assets/images/4.jpg',
+            'title': 'Lorem Ipsum Dolor Sit Amet',
+            'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin portti',
+        },
+    ];
+
     return (
-        <>
-            <div className='w-screen h-screen flex justify-center items-center'>
-                <div className='w-100'>
-                    <div>
-                        <img src={ayangmePic} alt="" />
-                    </div>
-                    <div className='text-center'>
-                        <h1>Ayangme</h1>
-                    </div>
-                </div>
+        <Layout cur_url={cur_url} title={"Home"}>
+            <Jumbotron/>
+            <div className='mx-10 my-25'>
+                <LandingListItem title={'Berita Terbaru'} item={item}/>
             </div>
-        </>
+            <div className='mx-10 my-25'>
+                <LandingListItem title={'Kegiatan Terbaru'} item={item}/>
+            </div>
+            <div className='mx-10 my-25'>
+                <LandingListItem title={'Video'} item={item}/>
+            </div>
+        </Layout>
     )
 }
 

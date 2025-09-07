@@ -1,0 +1,8 @@
+@import '../css/app.css';
+
+.navbar-active {
+    color: var(--clr-dark);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}

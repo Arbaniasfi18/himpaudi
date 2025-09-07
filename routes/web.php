@@ -4,3 +4,4 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'landing_page']);
+Route::get('/berita', [DashboardController::class, 'berita']);

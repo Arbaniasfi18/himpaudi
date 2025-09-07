@@ -1,1 +1,38 @@
 @import 'tailwindcss';
+
+:root {
+    --clr-dark: #011F2A;
+    --clr-primary: #05B8FF;
+    --clr-secondary: #01719D;
+}
+
+.glassmorphism {
+    backdrop-filter: blur(10px);
+    background-color: rgba(213, 213, 213, 0.268);
+    border: 0.5px solid rgba(219, 219, 219, 0.674);
+    color: white;
+}
+
+.dark-blue {
+    background-color: #011F2A;
+}
+
+.primary {
+    background-color: #05B8FF;
+}
+
+.secondary {
+    background-color: #01719D;
+}
+
+.txt-dark-blue {
+    color: #011F2A;
+}
+
+.txt-primary {
+    color: #05B8FF;
+}
+
+.txt-secondary {
+    color: #01719D;
+}
