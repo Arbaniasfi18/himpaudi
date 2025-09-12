@@ -35,7 +35,7 @@ function LandingPage({ }) {
     return (
         <Layout title={"Home"}>
             <div className='w-full h-[100vh] bg-blue-500'>
-                <img src={item[0].image} alt="" />
+                <img className='' src={item[0].image} alt="" />
             </div>
             <div>
                 <div className='mx-10 my-25'>
