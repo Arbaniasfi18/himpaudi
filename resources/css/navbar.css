@@ -6,3 +6,27 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+.nav-menu {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.dropdown-item-list {
+    width: max-content;
+    font-size: 16px;
+    font-weight: normal;
+    transform: translateX(-100px);
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.458);
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: var(--clr-dark);
+    color: white;
+    cursor: pointer;
+}

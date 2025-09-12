@@ -9,15 +9,11 @@ class DashboardController extends Controller
 {
     public function landing_page() 
     {
-        return Inertia::render('LandingPage', [
-            'cur_url' => url()->current(),
-        ]);
+        return Inertia::render('LandingPage');
     }
     
     public function berita() 
     {
-        return Inertia::render('Berita', [
-            'cur_url' => url()->current(),
-        ]);
+        return Inertia::render('Berita');
     }
 }

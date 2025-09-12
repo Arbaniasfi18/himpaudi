@@ -1,0 +1,10 @@
+@import '../css/app.css';
+
+.tentang-himpaudi {
+    background-color: var(--clr-secondary);
+    box-shadow: 0px -10px 20px 50px var(--clr-secondary);
+}
+
+.tentang-logo {
+    background-image: linear-gradient(to bottom, var(--clr-secondary) 10%, var(--clr-primary) 90%);
+}

@@ -1,9 +1,9 @@
 import Jumbotron from "../components/Jumbotron";
 import Layout from "../components/Layout";
 
-function Berita ({ cur_url }) {
+function Berita ({ }) {
     return (
-        <Layout title={'Berita'} cur_url={cur_url}>
+        <Layout title={'Berita'}>
             <Jumbotron/>
             <h1>Berita</h1>
         </Layout>

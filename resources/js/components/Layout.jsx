@@ -8,7 +8,7 @@ function Layout ({ children, cur_url, title }) {
             <Head>
                 <title>{ title + " - Himpaudi"}</title>
             </Head>
-            <main>
+            <main style={{ backgroundColor: '#F0F8FF' }}>
                 <Navbar cur_url={cur_url}/>
                 { children }
                 <Footer/>

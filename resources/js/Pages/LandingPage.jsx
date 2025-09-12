@@ -4,7 +4,7 @@ import Jumbotron from '../components/Jumbotron';
 import LandingListItem from '../components/LandingListItem';
 import Layout from '../components/Layout';
 
-function LandingPage({ cur_url }) {
+function LandingPage({ }) {
     const item = [
         {
             'id': 1,
@@ -33,16 +33,20 @@ function LandingPage({ cur_url }) {
     ];
 
     return (
-        <Layout cur_url={cur_url} title={"Home"}>
-            <Jumbotron/>
-            <div className='mx-10 my-25'>
-                <LandingListItem title={'Berita Terbaru'} item={item}/>
+        <Layout title={"Home"}>
+            <div className='w-full h-[100vh] bg-blue-500'>
+                <img src={item[0].image} alt="" />
             </div>
-            <div className='mx-10 my-25'>
-                <LandingListItem title={'Kegiatan Terbaru'} item={item}/>
-            </div>
-            <div className='mx-10 my-25'>
-                <LandingListItem title={'Video'} item={item}/>
+            <div>
+                <div className='mx-10 my-25'>
+                    <LandingListItem title={'Berita Terbaru'} item={item}/>
+                </div>
+                <div className='mx-10 my-25'>
+                    <LandingListItem title={'Kegiatan Terbaru'} item={item}/>
+                </div>
+                <div className='mx-10 my-25'>
+                    <LandingListItem title={'Video'} item={item}/>
+                </div>
             </div>
         </Layout>
     )
