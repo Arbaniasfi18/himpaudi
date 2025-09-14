@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import '../../css/landingitem.css'
 
 function LandingItem ({ item }) {
@@ -13,9 +14,9 @@ function LandingItem ({ item }) {
                 <div className="px-6 text-sm text-justify">
                     {item.desc.length > 255 ? item.desc.substring(0, 150) + '...' : item.desc}
                 </div>
-                <button className="ml-6 mb-3 mt-2 rounded-md px-6 py-2 w-50 hover:cursor-pointer card-button">
+                <Link href={'/berita/' + item.id} className="ml-6 mb-3 mt-2 rounded-md px-6 py-2 w-50 hover:cursor-pointer card-button" as={'button'}>
                     Baca Selengkapnya
-                </button>
+                </Link>
             </div>
         </div>
     )

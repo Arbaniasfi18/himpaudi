@@ -21,15 +21,13 @@ function Tentang({ }) {
                         <img className='w-80' src={logo} alt="" />
                     </div>
                     <div className='text-white max-w-280 pt-5'>
-                        <p>
-                            <ol>
-                                <li>1. BENDERA MERAH PUTIH BERKIBAR : Kibaran melambangkan semangat Indonesia dan dinamika HIMPAUDI</li>
-                                <li>2. LOMPATAN ANAK DAN ORANG DEWASA MEMEGANG BENDERA : Gambaran upaya meraih cita-cita bangsa Indonesia</li>
-                                <li>3. ANAK (KUNING EMAS) : Melambangkan Anak Indonesia dalam usia Perkembangan Emas (Golden Age)</li>
-                                <li>4. ORANG DEWASA (BIRU): Melambangkan kematangan dan kemapanan Pendidik dan Tenaga Kependidikan anak usia dini</li>
-                                <li>5. HATI DIANTARA ANAK DAN ORANG DEWASA : Melambangkan pertautan hati dan kasih sayang</li>
-                            </ol>
-                        </p>
+                        <ol>
+                            <li>1. BENDERA MERAH PUTIH BERKIBAR : Kibaran melambangkan semangat Indonesia dan dinamika HIMPAUDI</li>
+                            <li>2. LOMPATAN ANAK DAN ORANG DEWASA MEMEGANG BENDERA : Gambaran upaya meraih cita-cita bangsa Indonesia</li>
+                            <li>3. ANAK (KUNING EMAS) : Melambangkan Anak Indonesia dalam usia Perkembangan Emas (Golden Age)</li>
+                            <li>4. ORANG DEWASA (BIRU): Melambangkan kematangan dan kemapanan Pendidik dan Tenaga Kependidikan anak usia dini</li>
+                            <li>5. HATI DIANTARA ANAK DAN ORANG DEWASA : Melambangkan pertautan hati dan kasih sayang</li>
+                        </ol>
                         <p className='mt-5'>
                             KESIMPULAN : “Gerakan, Semangat HIMPAUDI Berkibar di Seluruh Nusantara Dengan Berlandaskan Iman dan Taqwa, Saling Asah, Asih dan Asuh”
                         </p>

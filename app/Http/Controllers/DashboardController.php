@@ -11,9 +11,4 @@ class DashboardController extends Controller
     {
         return Inertia::render('LandingPage');
     }
-    
-    public function berita() 
-    {
-        return Inertia::render('Berita');
-    }
 }

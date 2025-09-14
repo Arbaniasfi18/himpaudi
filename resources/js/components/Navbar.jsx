@@ -2,7 +2,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import '../../css/navbar.css';
 import { useEffect, useRef, useState } from "react";
 import { Link, usePage } from "@inertiajs/react";
-import logo from '../../../public/assets/logo/logo.png'
+import logo from '../../../public/assets/logo/landing.jpeg'
 
 function Navbar({ }) {
     const fontRef = useRef([]);
@@ -36,7 +36,7 @@ function Navbar({ }) {
                     'route': '/visi-misi',
                 },
                 {
-                    'name': 'Ketua Himpaudi',
+                    'name': 'Pengurus Himpaudi',
                     'route': '/pengurus',
                 },
             ]
@@ -94,10 +94,10 @@ function Navbar({ }) {
     }, []);
 
     return (
-        <nav className="glassmorphism w-[100vw] h-25 z-100 fixed">
+        <nav className="w-[100vw] h-20 z-100 fixed navbar">
             <div className="mx-10 flex justify-between h-full items-center">
                 <div>
-                    <img src={logo} width={'60px'} alt="" />
+                    <img src={logo} width={'300px'} alt="" />
                 </div>
                 <div className="flex items-center max-sm:hidden text-lg justify-center gap-15">
                     {
@@ -107,10 +107,10 @@ function Navbar({ }) {
                                     <Link href={item.child != undefined ? '' : item.route}>{ item.name }</Link>
                                     {
                                         item.child != undefined && hoverMenu == item.index
-                                            ? <div className="absolute bg-white p-5 rounded-md dropdown-item-list">
+                                            ? <div className="absolute bg-white p-5 rounded-md dropdown-item-list secondary">
                                                 {
                                                     item.child.map((childItem, childIndex) => {
-                                                        return <Link href={item.route + childItem.route}><div key={childIndex} className="txt-dark-blue text-left text-[16px] dropdown-item rounded-md hover:cursor-pointer">{ childItem.name }</div></Link>
+                                                        return <Link key={childIndex} href={item.route + childItem.route}><div className="text-left text-[16px] dropdown-item rounded-md hover:cursor-pointer text-white ">{ childItem.name }</div></Link>
                                                     })
                                                 }
                                             </div>

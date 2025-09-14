@@ -1,6 +1,5 @@
-import ayangmePic from '../../../public/assets/images/Ayames.png';
+import landingImage from '../../../public/assets/images/landing.png';
 import '../../css/landingpage.css';
-import Jumbotron from '../components/Jumbotron';
 import LandingListItem from '../components/LandingListItem';
 import Layout from '../components/Layout';
 
@@ -34,8 +33,11 @@ function LandingPage({ }) {
 
     return (
         <Layout title={"Home"}>
-            <div className='w-full h-[100vh] bg-blue-500'>
-                <img className='' src={item[0].image} alt="" />
+            <div className='w-full h-20'></div>
+            <div className='w-full h-[50vh] relative'>
+                <div className='absolute w-full h-full z-1 pl-10 text-4xl font-bold flex flex-col justify-center text-white'>SELAMAT DATANG, <br/> DI WEBSITE HIMPAUDI SUMATERA UTARA</div>
+                <div className='absolute w-full h-full landingJumbo'></div>
+                <img className='w-full h-full object-cover' src={landingImage} alt="" />
             </div>
             <div>
                 <div className='mx-10 my-25'>

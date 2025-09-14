@@ -1,0 +1,6 @@
+@import '../css/app.css';
+
+.landingJumbo {
+    background-image: linear-gradient(to right, var(--clr-primary), rgba(255, 255, 255, 0.308));
+    backdrop-filter: blur(2px);
+}

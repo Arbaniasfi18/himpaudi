@@ -1,8 +1,10 @@
+import pengurus from '../../../public/assets/images/pengurus.png'
+
 function Pengurus({ }) {
     return (
-        <>
-            Pengurus
-        </>
+        <section>
+            <img className='p-15' src={pengurus} alt="" srcSet="" />
+        </section>
     )
 }
 
